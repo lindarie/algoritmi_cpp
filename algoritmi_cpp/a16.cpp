@@ -11,22 +11,22 @@ int main()
 	int a = 1;
 	do
 	{
-		int num; //mainigo deklaracija
-		int n = 0; //atskaiti sak no 0
-		float sum = 0.0; // int sum dalot ar int n rezultatu nevar iegut float
-		float result = 0.0; // vid. arit. var but decimaldala
+		int num; 
+		int n = 0; //summas un n(ciparu skaita) atskaite sākas no 0
+		float sum = 0.0; 
+		float result = 0.0; //summa ir float, jo rezultāts (vid.arit.= sum/n) var būt decimāldaļa
 
 		cout << "Ievadi skaitli: ";
-		cin >> num; //datu ievade
+		cin >> num; 
 
-		while (num > 0) { //cikls, kas atdala ciparus
-			int digit = num % 10;
+		while (num > 0) { 
+			int digit = num % 10; //definē pēdējo ciparu
 			num = num / 10;
-			sum = sum + digit; //skaita ciparu summu
-			n = n++; //skaita n
+			sum = sum + digit; //kopējā ciparu summa (atskaites summa + pēdējais cipars)
+			n = n++; //kopējais n(skaits)
 		}
 
-		if (n > 0) result = sum / n; //aprekina vid. arit.
+		if (n > 0) result = sum / n; 
 		cout << "Videjais aritmetiskais: " << result << endl;
 
 		cout << "Vai turpinat (1) vai beigt (0)?  ";
@@ -37,7 +37,7 @@ int main()
 }
 
 
-/* ______________________________________________________________________________________________________________________
+/*_______________________________________________________________________________________________________________________
 *| Datu ievade | Vēlamā reakcija |    Rezultāts C++      | Rezultāts Python                              | Vai pareizi?  |
 *|_____________|_________________|_______________________|_______________________________________________|_______________|
 *|     126     |        3        |            3          |       3.0                                     |        +      |
