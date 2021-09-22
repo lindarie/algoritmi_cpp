@@ -23,7 +23,7 @@ int main()
 			int digit = num % 10; //definē pēdējo ciparu
 			num = num / 10;
 			sum = sum + digit; //kopējā ciparu summa (atskaites summa + pēdējais cipars)
-			n = n++; //kopējais n(skaits)
+			n = n + 1; //kopējais n(skaits)
 		}
 
 		if (n > 0) result = sum / n; 
