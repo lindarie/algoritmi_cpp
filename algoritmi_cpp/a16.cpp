@@ -13,8 +13,8 @@ int main()
 	{
 		int num; 
 		int n = 0; //summas un n(ciparu skaita) atskaite sākas no 0
-		float sum = 0.0; 
-		float result = 0.0; //summa ir float, jo rezultāts (vid.arit.= sum/n) var būt decimāldaļa
+		double sum = 0.0; 
+		double result = 0.0; //summa ir double, jo rezultāts (vid.arit.= sum/n) var būt decimāldaļa
 
 		cout << "Ievadi skaitli: ";
 		cin >> num; 
@@ -37,15 +37,12 @@ int main()
 }
 
 
-/*_______________________________________________________________________________________________________________________
-*| Datu ievade | Vēlamā reakcija |    Rezultāts C++      | Rezultāts Python                              | Vai pareizi?  |
-*|_____________|_________________|_______________________|_______________________________________________|_______________|
-*|     126     |        3        |            3          |       3.0                                     |        +      |
-*|    126.0    |kļūdas paziņojums| 3 (un pārtrauc ciklu) |invalid literal for int() with base 10: '126.0'|      - / +    |
-*|     127     |    3.3333(3)    |         3.33333       |                                               |      + /      |
-*|      9      |        9        |            9          |       9.0                                     |        +      |
-*|     -25     |kļūdas paziņojums|            0          | name 'result' is not defined                  |      - / +    |
-*|      0      |        0        |            0          |        0                                      |        +      |
-*|_____________|_________________|_______________________|_______________________________________________|_______________|
+/*
+*| Datu ievade |  Vēlamā reakcija | Rezultāts C++ | Rezultāts Python             | Vai pareizi? |
+*|-------------|------------------|---------------|------------------------------|--------------|
+*| 126         | 3                | 3             | 3.0                          | +            |
+*| 127         | 3.33(3)          |  3.33333      | 3.3333333333333335           | +            |
+*| 9           | 9                |  9            | 9.0                          | +            |
+*| 0           | 0                | 0             | name 'result' is not defined | -            |
 */
 
