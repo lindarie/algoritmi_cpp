@@ -1,6 +1,6 @@
 /* Autors: Linda Rieksta
-G7. Uzrakstît funkciju, kas  izmet no saraksta tos elementus, kuri lielâki par iepriekğçjo
-(iepriekğçjais elements ir tas, kurğ norâda uz nâkoğo PIRMS izmeğanas).
+G7. UzrakstÄ«t funkciju, kas  izmet no saraksta tos elementus, kuri lielÄki par iepriekÅ¡Ä“jo
+(iepriekÅ¡Ä“jais elements ir tas, kurÅ¡ norÄda uz nÄkoÅ¡o PIRMS izmeÅ¡anas).
 Programma izveidota: 05.04.2022
 */
 #include <iostream>
@@ -41,7 +41,7 @@ void removeElements(elem*& first, elem*& last) {
 	elem* k = last;
 	elem* s;
 	while (k != first) {
-	for (s = first; s != k; s = s->next) { //meklç elementu s pirms elementa k
+	for (s = first; s != k; s = s->next) { //meklÄ“ elementu s pirms elementa k
 		if (s->next == k) { 
 			if (s->num < k->num) {
 				if (k == last) { 
@@ -103,7 +103,7 @@ int main() {
 
 /*
 +---------------+-----------------+--------------------------------+---------------------------+--------------+
-| Ievades dati  | Vçlamâ reakcija | Rezultâts ar saistîto sarakstu | Rezultâts ar STL sarakstu | Vai pareizi? |
+| Ievades dati  | VÄ“lamÄ reakcija | RezultÄts ar saistÄ«to sarakstu | RezultÄts ar STL sarakstu | Vai pareizi? |
 +---------------+-----------------+--------------------------------+---------------------------+--------------+
 | 1 1 1         | 1 1 1           | 1 1 1                          | 1 1 1                     | +            |
 | 1 2 3 4 5     | 1               | 1                              | 1                         | +            |
