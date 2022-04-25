@@ -1,6 +1,6 @@
 /* Autors: Linda Rieksta
-G7. Uzrakstît funkciju, kas  izmet no saraksta tos elementus, kuri lielâki par iepriekğçjo 
-(iepriekğçjais elements ir tas, kurğ norâda uz nâkoğo PIRMS izmeğanas).
+G7. UzrakstÄ«t funkciju, kas  izmet no saraksta tos elementus, kuri lielÄki par iepriekÅ¡Ä“jo 
+(iepriekÅ¡Ä“jais elements ir tas, kurÅ¡ norÄda uz nÄkoÅ¡o PIRMS izmeÅ¡anas).
 Programma izveidota: 05.04.2022
 */
 
@@ -17,7 +17,7 @@ void print(list<int>aa) {
 }
 
 void deleteElements(list<int>&aa) {
-	aa.reverse(); //sarakstâ elementi tiek salîdzinâti no beigâm
+	aa.reverse(); //sarakstÄ elementi tiek salÄ«dzinÄti no beigÄm
 	for (auto it = aa.begin(); next(it) != aa.end();) {
 		if (*it > *(next(it))) {
 			it = aa.erase(it);
@@ -55,7 +55,7 @@ int main() {
 
 /*
 +---------------+-----------------+--------------------------------+---------------------------+--------------+
-| Ievades dati  | Vçlamâ reakcija | Rezultâts ar saistîto sarakstu | Rezultâts ar STL sarakstu | Vai pareizi? |
+| Ievades dati  | VÄ“lamÄ reakcija | RezultÄts ar saistÄ«to sarakstu | RezultÄts ar STL sarakstu | Vai pareizi? |
 +---------------+-----------------+--------------------------------+---------------------------+--------------+
 | 1 1 1         | 1 1 1           | 1 1 1                          | 1 1 1                     | +            |
 | 1 2 3 4 5     | 1               | 1                              | 1                         | +            |
